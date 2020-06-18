@@ -21,7 +21,7 @@ require 'partials/header.php';
                             <input type="text" placeholder="Mobile Number" class="mt-5 pl-3" name="number[]">
 
                             <select class="mt-5 pl-3" name="network[]">
-                                <option value="null">Select Airtime</option>
+                                <option value="null">Select Network</option>
                                 <option value="glo">GLO</option>
                                 <option value="mtn">MTN</option>
                                 <option value="airtel">AIRTEL</option>
