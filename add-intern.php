@@ -13,13 +13,24 @@ require 'partials/header.php';
             <div class="row">
                 <div class="col-md-6">
                     <form action="php/add-intern.php" method="POST">
-                        <input type="text" placeholder="Full Name" class="mt-5 pl-3" name="name">
-                        <input type="text" placeholder="Track" class="mt-5 pl-3" name="track">
-                        <input type="text" placeholder="Mobile Number" class="mt-5 pl-3" name="number">
-                        <input type="text" placeholder="Network" class="mt-5 pl-3" name="network">
 
-                        <div class="d-flex justify-content-end">
-                            <button class="btn btn-primary mt-5" type="submit">Add Intern</button>
+                        <div id="intern-details">
+                            <input type="text" placeholder="Full Name" class="mt-5 pl-3" name="name[]">
+                            <input type="text" placeholder="Track" class="mt-5 pl-3" name="track[]">
+                            <input type="text" placeholder="Mobile Number" class="mt-5 pl-3" name="number[]">
+
+                            <select class="mt-5 pl-3" name="network[]">
+                                <option value="null">Select Airtime</option>
+                                <option value="glo">GLO</option>
+                                <option value="mtn">MTN</option>
+                                <option value="airtel">AIRTEL</option>
+                                <option value="9mobile">9MOBILE</option>
+                            </select>
+                        </div>
+
+                        <div class="d-flex justify-content-end mb-5">
+                            <a class="btn btn-warning mt-5 " id="add">Add Another Row</a>
+                            <button class="btn btn-primary mt-5 ml-5" type="submit">Add Intern</button>
                         </div>
                     </form>
                 </div>

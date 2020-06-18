@@ -66,12 +66,32 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
+.btn-warning {
+  background-color: #084482;;
+  color: #fff !important;
+  border: 2px solid #084482; !important;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 170px;
+  transition: all 0.3s ease-in-out;
+}
+
 .btn-primary:hover {
   color: #fff !important;
   background-color: #1eb8ff;
   transform: scale(0.9);
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
     0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.btn-warning:hover {
+  color: #fff !important;
+  background-color: #084482;
+  border: 2px solid #084482; !important;
+
+  transform: scale(0.9);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+  0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
 
 .add-img {
@@ -88,7 +108,7 @@ h1 {
   width: 75%;
 }
 
-input {
+input, select {
   width: 100%;
   border: 2px solid #1eb8ff;
   border-radius: 5px;
