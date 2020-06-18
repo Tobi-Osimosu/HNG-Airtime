@@ -24,6 +24,7 @@ h1 {
   border-top: 1px solid #dee2e6;
   background: #f6fcfd;
   font-size: 14px;
+  text-align: center;
 }
 
 .avatar {
@@ -63,4 +64,8 @@ h1 {
 .btn-primary:hover {
   color: #fff !important;
   background-color: #1eb8ff;
+}
+
+.add-img {
+  width: 9%;
 }
