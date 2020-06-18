@@ -7,6 +7,7 @@ require 'partials/header.php';
             <div class="row mt-3">
                 <div class="col-md-12">
                     <h1 class="head">Add A New Intern</h1>
+                    <p class="head">Fill all input fields else entry will not be added.</p>
                 </div>
             </div>
 
