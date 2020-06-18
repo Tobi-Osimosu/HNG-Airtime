@@ -26,7 +26,7 @@
                             <a class="nav-link" href="./send-airtime.html">Home</a>
                         </li>
                         <li class="nav-item mr-5">
-                            <a class="nav-link active" href="./add-intern.html">Add Intern</a>
+                            <a class="nav-link active" href="add-intern.php">Add Intern</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./transactions.html">Transactions</a>
@@ -47,14 +47,14 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <form action="">
-                        <input type="text" placeholder="Full Name" class="mt-5 pl-3">
-                        <input type="text" placeholder="Track" class="mt-5 pl-3">
-                        <input type="text" placeholder="Mobile Number" class="mt-5 pl-3">
-                        <input type="text" placeholder="Network" class="mt-5 pl-3">
+                    <form action="php/add-intern.php" method="POST">
+                        <input type="text" placeholder="Full Name" class="mt-5 pl-3" name="name">
+                        <input type="text" placeholder="Track" class="mt-5 pl-3" name="track">
+                        <input type="text" placeholder="Mobile Number" class="mt-5 pl-3" name="number">
+                        <input type="text" placeholder="Network" class="mt-5 pl-3" name="network">
 
                         <div class="d-flex justify-content-end">
-                            <a class="btn btn-primary mt-5">Add Intern</a>
+                            <button class="btn btn-primary mt-5" type="submit">Add Intern</button>
                         </div>
                     </form>
                 </div>

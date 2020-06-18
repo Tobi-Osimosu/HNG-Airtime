@@ -103,9 +103,10 @@ curl_close($ch);
             <tbody>
             <?php
             foreach($previousInternContent as $key => $intern) {
-            $key++;
             $status = @json_decode($output[$key])->ResponseCode;
             $message = @json_decode($output[$key])->Message;
+            $key++;
+
             echo <<<START
             <tr>
                 <th scope="row"> $key</th>

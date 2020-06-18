@@ -90,7 +90,7 @@ START;
 
                 <div class="row mt-5">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-outline-primary mr-5" href="#">Add Intern</a>
+                        <a class="btn btn-outline-primary mr-5" href="/add-intern.php">Add Intern</a>
                         <button class="btn btn-primary" onclick="$('#airtime-form').submit()">Send Airtime</button>
                     </div>
                 </div>
