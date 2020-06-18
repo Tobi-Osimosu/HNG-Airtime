@@ -54,7 +54,7 @@
                 <table class="table mt-3">
                     <thead class="thead-dark">
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">S/N</th>
                             <th scope="col">NAME</th>
                             <th scope="col">TRACK</th>
                             <th scope="col">MOBILE NUMBER</th>
@@ -64,7 +64,9 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <form action="" id="airtime-form" method="POST">
                     <?php
+
                         foreach($previousInternContent as $key => $intern) {
                             $key++;
                             echo <<<START
@@ -74,19 +76,22 @@
                                 <td>$intern->track</td>
                                 <td>$intern->number</td>
                                 <td>$intern->network</td>
-                                <td><input type="number" class="amount-input"></td>
+                                <td><input type="number" class="amount-input" name="amount[]"></td>
+                                <input type="hidden" name="number[]" value="$intern->number">
+                                <input type="hidden" name="network[]" value="$intern->network">
                                 <td><a href="#"><img src="./images/trash.svg" alt="" class="action"></a></td>
                             </tr>
 START;
                         }
                     ?>
+                    </form>
                     </tbody>
                 </table>
 
                 <div class="row mt-5">
                     <div class="col-md-12 d-flex justify-content-center">
-                        <a class="btn btn-outline-primary mr-5">Add Intern</a>
-                        <a class="btn btn-primary">Send Airtime</a>
+                        <a class="btn btn-outline-primary mr-5" href="#">Add Intern</a>
+                        <button class="btn btn-primary" onclick="$('#airtime-form').submit()">Send Airtime</button>
                     </div>
                 </div>
             </section>

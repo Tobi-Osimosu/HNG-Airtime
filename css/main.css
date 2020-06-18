@@ -24,6 +24,7 @@ h1 {
   border-top: 1px solid #dee2e6;
   background: #f6fcfd;
   font-size: 14px;
+  text-align: center;
 }
 
 .avatar {
@@ -31,26 +32,53 @@ h1 {
 }
 
 .amount-input {
-  border: 1px solid #1EB8FF;
+  border: 1px solid #1eb8ff;
   border-radius: 10px;
-  width: 30%;
+  width: 80px;
   height: 30px;
   text-align: center;
 }
 
 .btn-outline-primary {
-  color: #1EB8FF !important;
-  border: 2px solid #1EB8FF !important;
-  border-radius: 10px;
+  color: #1eb8ff !important;
+  border: 2px solid #1eb8ff !important;
+  border-radius: 5px;
   font-weight: bold;
   width: 170px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  color: #1eb8ff !important;
+  background-color: #fff;
+  transform: scale(0.9);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
 
 .btn-primary {
-  background-color: #1EB8FF;
+  background-color: #1eb8ff;
   color: #fff !important;
-  border: 2px solid #1EB8FF !important;
-  border-radius: 10px;
+  border: 2px solid #1eb8ff !important;
+  border-radius: 5px;
   font-weight: bold;
   width: 170px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #1eb8ff;
+  transform: scale(0.9);
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+}
+
+.add-img {
+  width: 9%;
+}
+
+.table {
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 }
