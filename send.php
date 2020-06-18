@@ -64,7 +64,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                    <form action="" id="airtime-form" method="POST">
+                    <form action="php/process.php" id="airtime-form" method="POST">
                     <?php
 
                         foreach($previousInternContent as $key => $intern) {
