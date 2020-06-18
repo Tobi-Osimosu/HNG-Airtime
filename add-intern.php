@@ -29,7 +29,7 @@ require 'partials/header.php';
                         </div>
 
                         <div class="d-flex justify-content-end mb-5">
-                            <a class="btn btn-warning mt-5 " id="add">Add Another Row</a>
+                            <a class="btn btn-outline-primary  mt-5" id="add">Add Another Row</a>
                             <button class="btn btn-primary mt-5 ml-5" type="submit">Add Intern</button>
                         </div>
                     </form>
