@@ -8,12 +8,15 @@ $network = $_POST['network'];
 
 foreach ($numbers as $key => $number) {
 
-    $previousInternContent[] = [
-        'name' => $name[$key],
-        'track' => $track[$key],
-        'network' => $network[$key],
-        'number' => $number
-    ];
+    if($network[$key] != 'null' && ! empty($name[$key]) && ! empty($track[$key]) && ! empty($number)){
+        $previousInternContent[] = [
+            'name' => $name[$key],
+            'track' => $track[$key],
+            'network' => $network[$key],
+            'number' => $number
+        ];
+    }
+
 
 }
 
