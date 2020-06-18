@@ -31,7 +31,7 @@ h1 {
 }
 
 .amount-input {
-  border: 1px solid #1EB8FF;
+  border: 1px solid #1eb8ff;
   border-radius: 10px;
   width: 30%;
   height: 30px;
@@ -39,18 +39,28 @@ h1 {
 }
 
 .btn-outline-primary {
-  color: #1EB8FF !important;
-  border: 2px solid #1EB8FF !important;
-  border-radius: 10px;
+  color: #1eb8ff !important;
+  border: 2px solid #1eb8ff !important;
+  border-radius: 5px;
   font-weight: bold;
   width: 170px;
 }
 
+.btn-outline-primary:hover {
+  color: #1eb8ff !important;
+  background-color: #fff;
+}
+
 .btn-primary {
-  background-color: #1EB8FF;
+  background-color: #1eb8ff;
   color: #fff !important;
-  border: 2px solid #1EB8FF !important;
-  border-radius: 10px;
+  border: 2px solid #1eb8ff !important;
+  border-radius: 5px;
   font-weight: bold;
   width: 170px;
+}
+
+.btn-primary:hover {
+  color: #fff !important;
+  background-color: #1eb8ff;
 }
