@@ -5,7 +5,7 @@ require 'partials/header.php';
     <main>
         <section class="container mt-5">
             <div class="row">
-                <div class="col-md-6 landing d-flex flex-direction-column align-items-center">
+            <div class="col-md-6 landing d-flex flex-column align-items-start justify-content-center">
                     <h1 class="head">Quickly Reward Interns <br> With Airtime</h1>
                     <a class="btn btn-primary mt-5">Get Started</a>
                 </div>
