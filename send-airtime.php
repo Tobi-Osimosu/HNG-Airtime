@@ -39,7 +39,7 @@ require 'partials/header.php';
                                 <td><input type="number" class="amount-input" name="amount[]"></td>
                                 <input type="hidden" name="number[]" value="$intern->number">
                                 <input type="hidden" name="network[]" value="$intern->network">
-                                <td><a href="#"><img src="./images/trash.svg" alt="" class="action"></a></td>
+                                <td><a href="/php/delete-intern.php?number=$intern->number"><img src="./images/trash.svg" alt="" class="action"></a></td>
                             </tr>
 START;
                         }
