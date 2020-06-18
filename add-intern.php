@@ -58,7 +58,9 @@
                         </div>
                     </form>
                 </div>
-                <div class="circle-img col-md-6"></div>
+                <div class="col-md-6 d-flex justify-content-end">
+                    <img src="./images/circles.png" alt="" class="img-fluid circle-img">
+                </div>
             </div>
 
         </section>
@@ -66,6 +68,7 @@
 
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
