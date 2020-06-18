@@ -1,12 +1,21 @@
 <?php
 require '../db/db.php';
 
-$previousInternContent[] = [
-    'name' => $_POST['name'],
-    'track' => $_POST['track'],
-    'network' => $_POST['network'],
-    'number' => $_POST['number']
-];
+$name = $_POST['name'];
+$track = $_POST['track'];
+$numbers = $_POST['number'];
+$network = $_POST['network'];
+
+foreach ($numbers as $key => $number) {
+
+    $previousInternContent[] = [
+        'name' => $name[$key],
+        'track' => $track[$key],
+        'network' => $network[$key],
+        'number' => $number
+    ];
+
+}
 
 file_put_contents($dbFile, json_encode($previousInternContent)."\n");
 
