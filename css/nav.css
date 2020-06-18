@@ -1,0 +1,16 @@
+.bg-light {
+  background-color: #fff !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #1eb8ff !important;
+  font-weight: bold;
+}
+
+.navbar {
+  padding-top: 2.5rem;
+}
+
+.logo {
+  width: 200px;
+}
