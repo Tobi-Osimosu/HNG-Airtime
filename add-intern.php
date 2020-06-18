@@ -16,7 +16,18 @@ require 'partials/header.php';
                         <input type="text" placeholder="Full Name" class="mt-5 pl-3" name="name">
                         <input type="text" placeholder="Track" class="mt-5 pl-3" name="track">
                         <input type="text" placeholder="Mobile Number" class="mt-5 pl-3" name="number">
-                        <input type="text" placeholder="Network" class="mt-5 pl-3" name="network">
+                        <!-- <input type="text" placeholder="Network" class="mt-5 pl-3" name="network"> -->
+                        <div class="dropdown mt-5 dropright">
+                        <button class="btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                NETWORK
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#" name="network">GLO</a>
+                                <a class="dropdown-item" href="#" name="network">MTN</a>
+                                <a class="dropdown-item" href="#" name="network">AIRTEL</a>
+                                <a class="dropdown-item" href="#" name="network">9MOBILE</a>
+                            </div>
+                        </div>
 
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary mt-5" type="submit">Add Intern</button>
@@ -32,6 +43,7 @@ require 'partials/header.php';
     </main>
 
     <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
