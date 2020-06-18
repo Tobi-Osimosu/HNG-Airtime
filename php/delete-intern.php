@@ -12,7 +12,7 @@ if($number){
         }
     }
 
-    file_put_contents($dbFile, json_encode($previousInternContent)."\n");
+    file_put_contents($dbFile, json_encode(array_values($previousInternContent))."\n");
 
 }
 
