@@ -10,5 +10,5 @@ $previousInternContent[] = [
 
 file_put_contents($dbFile, json_encode($previousInternContent)."\n");
 
-header("Location:../send.php");
+header("Location:../send-airtime.php");
 ?>

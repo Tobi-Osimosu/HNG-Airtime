@@ -28,13 +28,13 @@ require 'db/db.php';
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-5">
-                        <a class="nav-link" href="./send-airtime.html">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item mr-5">
                         <a class="nav-link" href="../add-intern.php">Add Intern</a>
                     </li>
                     <li class="nav-item mr-5">
-                        <a class="nav-link" href="../send.php">Send Airtime</a>
+                        <a class="nav-link" href="../send-airtime.php">Send Airtime</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./transactions.html">Transactions</a>
