@@ -94,3 +94,7 @@ input {
   border-radius: 5px;
   height: 40px;
 }
+
+.landing {
+  height: 70vh;
+}
