@@ -1,3 +1,7 @@
+<?php
+    require 'db/db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,16 +64,22 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Mark</td>
-                            <td>Design</td>
-                            <td>08023967893</td>
-                            <td>Mtn</td>
-                            <td><input type="number" class="amount-input"></td>
-                            <td><a href="#"><img src="./images/trash.svg" alt="" class="action"></a></td>
-                        </tr>
-
+                    <?php
+                        foreach($previousInternContent as $key => $intern) {
+                            $key++;
+                            echo <<<START
+                            <tr>
+                                <th scope="row"> $key</th>
+                                <td>$intern->name</td>
+                                <td>$intern->track</td>
+                                <td>$intern->number</td>
+                                <td>$intern->network</td>
+                                <td><input type="number" class="amount-input"></td>
+                                <td><a href="#"><img src="./images/trash.svg" alt="" class="action"></a></td>
+                            </tr>
+START;
+                        }
+                    ?>
                     </tbody>
                 </table>
 
