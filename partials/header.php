@@ -1,6 +1,6 @@
 <?php
 
-require 'db/db.php';
+require __DIR__ . '/../db/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,9 +9,9 @@ require 'db/db.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/nav.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>Send Airtime | HNG Airtime</title>
 </head>

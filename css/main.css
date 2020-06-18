@@ -3,7 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+h1,p {
   font-style: normal;
   font-weight: bold;
   color: #084482;
