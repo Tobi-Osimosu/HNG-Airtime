@@ -23,9 +23,34 @@ h1 {
   vertical-align: top;
   border-top: 1px solid #dee2e6;
   background: #f6fcfd;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .avatar {
   width: 10%;
+}
+
+.amount-input {
+  border: 1px solid #1EB8FF;
+  border-radius: 10px;
+  width: 30%;
+  height: 30px;
+  text-align: center;
+}
+
+.btn-outline-primary {
+  color: #1EB8FF !important;
+  border: 2px solid #1EB8FF !important;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 170px;
+}
+
+.btn-primary {
+  background-color: #1EB8FF;
+  color: #fff !important;
+  border: 2px solid #1EB8FF !important;
+  border-radius: 10px;
+  font-weight: bold;
+  width: 170px;
 }
