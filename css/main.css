@@ -108,7 +108,7 @@ h1 {
   width: 75%;
 }
 
-input {
+input, select {
   width: 100%;
   border: 2px solid #1eb8ff;
   border-radius: 5px;
