@@ -37,7 +37,7 @@ require 'db/db.php';
                         <a class="nav-link" href="../send-airtime.php">Send Airtime</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./transactions.html">Transactions</a>
+                        <a class="nav-link" href="../transactions.php">Transactions</a>
                     </li>
                 </ul>
             </div>
