@@ -85,7 +85,7 @@ h1 {
 
 .circle-img {
   position: absolute;
-  background: url("../images/circles.png");
+  width: 75%;
 }
 
 input {
