@@ -57,14 +57,13 @@ require '../partials/header.php';
                 <th scope="col">S/N</th>
                 <th scope="col">NAME</th>
                 <th scope="col">MOBILE NUMBER</th>
-                <th scope="col">STATUS CODE</th>
+                <th scope="col">NETWORK</th>
                 <th scope="col">MESSAGE</th>
             </tr>
             </thead>
             <tbody>
             <?php
             foreach($previousInternContent as $key => $intern) {
-            $status = @json_decode($output[$key])->ResponseCode;
             $message = @json_decode($output[$key])->Message;
             $key++;
 
@@ -73,7 +72,7 @@ require '../partials/header.php';
                 <th scope="row"> $key</th>
                 <td>$intern->name</td>
                 <td>$intern->number</td>
-                <td>$status</td>
+                <td>$intern->network</td>
                 <td>$message</td>
             </tr>
 START;

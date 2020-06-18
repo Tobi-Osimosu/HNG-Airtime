@@ -7,6 +7,7 @@ require 'partials/header.php';
             <div class="row mt-3">
                 <div class="col-md-12">
                     <h1 class="head">Add A New Intern</h1>
+                    <p class="head">Fill all input fields else entry will not be added.</p>
                 </div>
             </div>
 
@@ -29,7 +30,7 @@ require 'partials/header.php';
                         </div>
 
                         <div class="d-flex justify-content-end mb-5">
-                            <a class="btn btn-warning mt-5 " id="add">Add Another Row</a>
+                            <a class="btn btn-outline-primary  mt-5" id="add">Add Another Row</a>
                             <button class="btn btn-primary mt-5 ml-5" type="submit">Add Intern</button>
                         </div>
                     </form>
