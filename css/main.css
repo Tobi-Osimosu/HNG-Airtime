@@ -69,7 +69,7 @@ h1 {
 .btn-warning {
   background-color: #084482;;
   color: #fff !important;
-  border: 2px solid #084482; !important;
+  border: 2px solid #084482 !important;
   border-radius: 5px;
   font-weight: bold;
   width: 170px;
@@ -87,7 +87,7 @@ h1 {
 .btn-warning:hover {
   color: #fff !important;
   background-color: #084482;
-  border: 2px solid #084482; !important;
+  border: 2px solid #084482 !important;
 
   transform: scale(0.9);
   box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
@@ -98,14 +98,9 @@ h1 {
   width: 9%;
 }
 
-.table {
-  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
-}
-
 .circle-img {
   position: absolute;
-  width: 75%;
+  width: 80%;
 }
 
 input, select {
@@ -117,4 +112,10 @@ input, select {
 
 .landing {
   height: 70vh;
+}
+
+@media screen and (max-width: 450px) {
+  .circle-img {
+    display: none;
+  }
 }
