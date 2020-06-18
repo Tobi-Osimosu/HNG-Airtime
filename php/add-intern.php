@@ -10,4 +10,5 @@ $previousInternContent[] = [
 
 file_put_contents($dbFile, json_encode($previousInternContent)."\n");
 
-return;
+header("Location:../send.php");
+?>
