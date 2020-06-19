@@ -1,63 +1,81 @@
 <?php
 
 require 'partials/header.php';
+
+
+$url = 'https://api.wallets.africa/self/transactions';
+$secretKey = '9dnk3o7267g0';
+$publicKey = '5wufpu7o7lpw';
+
+// create curl resource
+$ch = curl_init();
+
+
+curl_setopt_array($ch, array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_ENCODING => "",
+    CURLOPT_MAXREDIRS => 10,
+    CURLOPT_TIMEOUT => 0,
+    CURLOPT_FOLLOWLOCATION => true,
+    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+    CURLOPT_CUSTOMREQUEST => "POST",
+    CURLOPT_POSTFIELDS =>"{\r\n  \"skip\": 0,\r\n  \"take\": 15,\r\n  \"dateFrom\": \"2020-01-01\",\r\n  \"dateTo\": \"2021-06-15\",\r\n  \"transactionType\": 3,\r\n  \"secretKey\": \"9dnk3o7267g0\",\r\n  \"currency\": \"NGN\"\r\n}\r\n",
+    CURLOPT_HTTPHEADER => array(
+        "Content-Type: application/json",
+        "Authorization: Bearer " . $publicKey
+    ),
+));
+
+$response = curl_exec($ch);
+
+curl_close($ch);
+$response = json_decode($response);
+
 ?>
     <main>
         <section class="container mt-5">
             <div class="row mt-3">
                 <div class="col-md-12">
-                    <h1 class="head">Transactions - Coming Soon</h1>
+                    <h1 class="head">Transactions</h1>
                 </div>
             </div>
 
-<!--            <div class="table-responsive">-->
-<!--                <table class="table shadow-sm mt-3">-->
-<!--                    <thead class="thead-dark">-->
-<!--                        <tr>-->
-<!--                            <th scope="col">#</th>-->
-<!--                            <th scope="col">NAME</th>-->
-<!--                            <th scope="col">TRACK</th>-->
-<!--                            <th scope="col">MOBILE NUMBER</th>-->
-<!--                            <th scope="col">NETWORK</th>-->
-<!--                            <th scope="col">STATUS</th>-->
-<!--                        </tr>-->
-<!--                    </thead>-->
-<!--                    <tbody>-->
-<!--                        <tr>-->
-<!--                            <th scope="row">1</th>-->
-<!--                            <td><img src="./images/avatar.svg" alt="" class="avatar mr-3">Mark Joe</td>-->
-<!--                            <td>Design</td>-->
-<!--                            <td>08023967893</td>-->
-<!--                            <td>Mtn</td>-->
-<!--                            <td>Success</td>-->
-<!--                        </tr>-->
-<!--                        <tr>-->
-<!--                            <th scope="row">2</th>-->
-<!--                            <td><img src="./images/avatar.svg" alt="" class="avatar mr-3">John Doe</td>-->
-<!--                            <td>Frontend</td>-->
-<!--                            <td>08023965467</td>-->
-<!--                            <td>Airtel</td>-->
-<!--                            <td>Success</td>-->
-<!--                        </tr>-->
-<!--                        <tr>-->
-<!--                            <th scope="row">3</th>-->
-<!--                            <td><img src="./images/avatar.svg" alt="" class="avatar mr-3">Jane Dows</td>-->
-<!--                            <td>Backend</td>-->
-<!--                            <td>08067787893</td>-->
-<!--                            <td>Glo</td>-->
-<!--                            <td>Success</td>-->
-<!--                        </tr>-->
-<!--                        <tr>-->
-<!--                            <th scope="row">4</th>-->
-<!--                            <td><img src="./images/avatar.svg" alt="" class="avatar mr-3">Larry King</td>-->
-<!--                            <td>Frontend</td>-->
-<!--                            <td>08067787893</td>-->
-<!--                            <td>9mobile</td>-->
-<!--                            <td>Success</td>-->
-<!--                        </tr>-->
-<!--                    </tbody>-->
-<!--                </table>-->
-<!--            </div>-->
+            <div class="table-responsive">
+                <table class="table shadow-sm mt-3">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">S/N</th>
+                            <th scope="col">Currency</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Narration</th>
+                            <th scope="col">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <?php
+                    $key = 1;
+
+                    foreach($response->Data->Transactions as $data){
+
+                        echo <<<HELLO
+                        <tr>
+                            <th scope="row">$key</th>
+                            <td>$data->Currency</td>
+                            <td>$data->Amount</td>
+                            <td>$data->Category</td>
+                            <td>$data->Narration</td>
+                            <td>$data->DateTransacted</td>
+                        </tr>
+HELLO;
+                    $key++;
+
+                    }
+                        ?>
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
 
