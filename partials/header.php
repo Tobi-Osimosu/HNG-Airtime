@@ -13,7 +13,7 @@ require __DIR__ . '/../db/db.php';
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/nav.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <title>Send Airtime | HNG Airtime</title>
+    <title>HNG Airtime</title>
 </head>
 
 <body>
