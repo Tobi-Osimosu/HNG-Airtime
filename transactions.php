@@ -4,8 +4,8 @@ require 'partials/header.php';
 
 
 $url = 'https://api.wallets.africa/self/transactions';
-$secretKey = '9dnk3o7267g0';
-$publicKey = '5wufpu7o7lpw';
+$secretKey = 'hfucj5jatq8h';
+$publicKey = 'uvjqzm5xl6bw';
 
 // create curl resource
 $ch = curl_init();
@@ -20,7 +20,7 @@ curl_setopt_array($ch, array(
     CURLOPT_FOLLOWLOCATION => true,
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "POST",
-    CURLOPT_POSTFIELDS =>"{\r\n  \"skip\": 0,\r\n  \"take\": 15,\r\n  \"dateFrom\": \"2020-01-01\",\r\n  \"dateTo\": \"2021-06-15\",\r\n  \"transactionType\": 3,\r\n  \"secretKey\": \"9dnk3o7267g0\",\r\n  \"currency\": \"NGN\"\r\n}\r\n",
+    CURLOPT_POSTFIELDS =>"{\r\n  \"skip\": 0,\r\n  \"take\": 15,\r\n  \"dateFrom\": \"2020-01-01\",\r\n  \"dateTo\": \"2021-06-15\",\r\n  \"transactionType\": 3,\r\n  \"secretKey\": \"hfucj5jatq8h\",\r\n  \"currency\": \"NGN\"\r\n}\r\n",
     CURLOPT_HTTPHEADER => array(
         "Content-Type: application/json",
         "Authorization: Bearer " . $publicKey

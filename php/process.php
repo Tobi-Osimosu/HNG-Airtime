@@ -2,8 +2,8 @@
 require '../db/db.php';
 
 $url = 'https://api.wallets.africa/bills/airtime/purchase';
-$secretKey = '9dnk3o7267g0';
-$publicKey = '5wufpu7o7lpw';
+$secretKey = 'hfucj5jatq8h';
+$publicKey = 'uvjqzm5xl6bw';
 
 // create curl resource
 $ch = curl_init();
