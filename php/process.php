@@ -1,7 +1,7 @@
 <?php
 require '../db/db.php';
 
-$url = 'https://api.wallets.africa/bills/airtime/purchase';
+$url = 'https://sandbox.wallets.africa/bills/airtime/purchase';
 $secretKey = 'hfucj5jatq8h';
 $publicKey = 'uvjqzm5xl6bw';
 

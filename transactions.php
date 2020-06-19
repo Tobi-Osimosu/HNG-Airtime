@@ -3,7 +3,7 @@
 require 'partials/header.php';
 
 
-$url = 'https://api.wallets.africa/self/transactions';
+$url = 'https://sandbox.wallets.africa/self/transactions';
 $secretKey = 'hfucj5jatq8h';
 $publicKey = 'uvjqzm5xl6bw';
 
