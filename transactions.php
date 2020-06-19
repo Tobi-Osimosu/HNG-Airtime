@@ -4,8 +4,8 @@ require 'partials/header.php';
 
 
 $url = 'https://api.wallets.africa/self/transactions';
-$secretKey = '9dnk2o7267g0';
-$publicKey = '5wuf4u7o7lpw';
+$secretKey = '9dnk3o7267g0';
+$publicKey = '5wufpu7o7lpw';
 
 // create curl resource
 $ch = curl_init();
